@@ -3,15 +3,11 @@ programa
 	
 	funcao inicio()
 	{
-		real velocidade
-		escreva("Informe a velociade: ")
-		leia(velocidade)
+		inteiro numero = 0
 
-		se(velocidade > 80){
-			escreva("Multa! \nValor: R$" + velocidade*5)
-		} senao{
-			escreva("Tudo certo.\n")
-			inicio()
+		enquanto(numero<=10){
+			escreva("\nNumero: " + numero)
+			numero++
 		}
 	}
 }
@@ -20,7 +16,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 109; 
+ * @POSICAO-CURSOR = 129; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -3,24 +3,24 @@ programa
 	
 	funcao inicio()
 	{
-		real velocidade
-		escreva("Informe a velociade: ")
-		leia(velocidade)
+		cadeia resposta
+		inteiro quantidade = 0
 
-		se(velocidade > 80){
-			escreva("Multa! \nValor: R$" + velocidade*5)
-		} senao{
-			escreva("Tudo certo.\n")
-			inicio()
-		}
+		faca{
+			escreva("Você gosta de futebol?(S/N): ")
+			leia(resposta)
+			quantidade++
+		}enquanto(resposta == "S")
+		escreva("Total de adoradores de football: " + quantidade)
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 109; 
+ * @POSICAO-CURSOR = 162; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
