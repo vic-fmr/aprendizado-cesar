@@ -11,24 +11,20 @@ def verificarInput(variavel):
     
 
 while interesse != "s" and interesse != "n":
-    interesse = input("Digite s ou n: ")
+    interesse = input("Digite s ou n: ").lower()
 
 while interesse == "s":
-    operacao = input("Ótimo! Selecione a operação desejada:\n1-Saque\n2-Deposito\n\n")
-    operacao = verificarInput(operacao)
+    operacao = verificarInput(input("Ótimo! Selecione a operação desejada:\n1-Saque\n2-Deposito\n\n"))
     
     while operacao != 1 and operacao != 2:
-        operacao = input("Por favor, insira 1 ou 2: ")
-        operacao = verificarInput(operacao)
-        
-        
+        operacao = verificarInput(input("Por favor, insira 1 ou 2: "))
+              
     match(operacao):
         case 1:
             saque = verificarInput(input(f"\nSaldo: R${saldo:.2F}\nInsira o valor a ser sacado: R$"))
                
             while saque > saldo or saque <= 0:
-                saque = input("Insira um valor válido: ")
-                saque = verificarInput(saque)
+                saque = verificarInput(input("Insira um valor válido: "))
                 
             saldo -= saque
             print(f"Saque realizado!\nSaldo: {saldo:.2F}")
@@ -44,8 +40,8 @@ while interesse == "s":
             print(f"Deposito realizado com sucesso!\nSaldo: {saldo:.2F}")
                 
                 
-    interesse = input("Deseja realizar mais operações?(s/n)")
+    interesse = input("Deseja realizar mais operações?(s/n)").lower()
     while(interesse != "s" and interesse != "n"):
-        interesse = (input("Insira s ou n: "))
+        interesse = input("Insira s ou n: ").lower()
         
 print("Obrigado por utilizar o banco 'To Liso!'")
