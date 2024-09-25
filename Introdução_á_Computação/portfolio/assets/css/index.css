@@ -52,19 +52,20 @@ header nav ul li:not(:first-child):hover {
 header nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
 }
 
 body {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100vh;
-    background-size: 300% 300%;
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    backdrop-filter: blur(10px);
+    background-image: url(../img/background_vinho.jpg);
+    background-size: 200% 200%;
+    background-position: center;
+    backdrop-filter: blur(20px);
 }
-
     /*
+    background-size: 250% 250%;
     background-image: linear-gradient(-45deg, rgb(72, 13, 13) 0%, rgb(72, 9, 9) 25%, rgb(137, 55, 55) 51%, #000000 100%);
     -webkit-animation: AnimateBG 10s ease infinite;
     animation: AnimateBG 10s ease infinite;
@@ -108,11 +109,26 @@ main{
     align-items: center;
     color: white;
 }
+main ul {
+    font-size: xx-large;
+    display: flex;
+    gap: 4vw;
+    list-style-type: none;
+}
+main ul li a i{
+    margin-top: 1.5rem;
+    color: white;
+    transition: transform 0.5s ease-in-out, color 0.2s;
+}
+main ul li a i:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 5px white);
+}
 body img {
     border: 2px solid white;
     border-radius: 50%;
-    box-shadow: 0px 0px 20px white;
-    animation: luzPulsante 2s infinite alternate;
+    box-shadow: 0px 0px 10px rgb(114, 114, 114);
     width: 20vw; /* Escalável conforme o tamanho da tela */
     height: auto;
 }
@@ -156,9 +172,9 @@ body img {
 /* Para telas menores, como celulares */
 @media (max-width: 480px) {
     header nav ul {
-        flex-direction: column;
+        flex-direction: row;
         /* Menu em coluna em telas bem pequenas */
-        gap: 3vh;
+        gap: 2vh;
         /* Ajusta o espaçamento entre os itens do menu */
     }
 
@@ -167,21 +183,29 @@ body img {
         /* Tamanho da fonte ainda menor */
     }
 
-    body main img {
+    body main h1,h2 {
+        font-size: 1rem;
         /* Aumenta mais o tamanho da imagem para caber na tela */
-        transform: translate(-50%, -60%);
+    }
+    body main img{
+        width: 35vw;
+        /* Aumenta mais o tamanho da imagem para caber na tela */
     }
 }
 
 /* Para telas grandes */
 @media (min-width: 1024px) {
     header nav ul li a {
-        font-size: 1.8rem;
+        font-size: 1rem;
         /* Aumenta o tamanho da fonte para telas grandes */
     }
 
-    body img {
-        width: 10%;
+    body img{
+        width: 15%;
+        margin-bottom: 1%;
         /* Aumenta o tamanho da imagem para telas maiores */
+    }
+    body h1,h2{
+        font-size: medium;
     }
 }
