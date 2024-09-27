@@ -32,6 +32,7 @@
 }
 #id-header.scrolled {
     position: sticky;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -93,7 +94,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 200vh;
+    height: 300vh;
     background-image: url(../img/background_vinho.jpg);
     background-size: 300% 300%;
     background-position: center;
@@ -103,7 +104,7 @@ body {
 
 main {
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     position: absolute;
     z-index: 0;
@@ -134,22 +135,52 @@ main ul li a i:hover {
     filter: drop-shadow(0px 0px 5px white);
 }
 
-body img {
+main img {
     border: 2px solid white;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px rgb(114, 114, 114);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
     width: 20vw;
     /* Escalável conforme o tamanho da tela */
     height: auto;
 }
-
-#sobre-mim{
-    width: 100vw;
+#inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
-    padding: 20vh;
-    background-color: gray;
+    width: 100vw;
 }
+#sobre-mim{
+    width: 95vw;
+    height: 100vh;
+}
+.conteudo-sobre-mim{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    /*background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.39), rgba(255, 255, 255, 0.151), rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.089));
+    */border-radius: 5px;
+    padding: 30px;
+    margin-top: 11vh;
+}
+.descricao-sobre-mim{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#sobre-mim img{
+    margin-right: 1vw;
+    border: none;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
 
+}
 /* Media Queries para diferentes tamanhos de tela */
 @media (max-width: 768px) {
     header {

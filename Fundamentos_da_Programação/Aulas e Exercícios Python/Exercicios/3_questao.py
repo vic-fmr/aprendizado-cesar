@@ -40,7 +40,7 @@ while interesse == "s":
             print(f"Deposito realizado com sucesso!\nSaldo: {saldo:.2F}")
                 
                 
-    interesse = input("Deseja realizar mais operações?(s/n)").lower()
+    interesse = input("\nDeseja realizar mais operações?(s/n)").lower()
     while(interesse != "s" and interesse != "n"):
         interesse = input("Insira s ou n: ").lower()
         
