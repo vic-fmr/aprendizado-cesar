@@ -6,11 +6,13 @@
     padding: 0;
     font-family: Poppins, sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 #id-header {
     display: flex;
     width: 100vw;
+    height: 10vh;
     position: sticky;
     top: 0;
     left: 0;
@@ -18,7 +20,6 @@
     z-index: 1;
     justify-content: center;
     align-items: center;
-    height: 10vh;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.4s ease-in-out;
 }
@@ -43,15 +44,13 @@ header nav ul li{
     color: white;
     cursor: pointer;
     opacity: 0.5;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.1s ease-in, opacity 0.1s ease-in;
 }
 header nav ul li.clicked{
+    transform: scale(1.1);
     opacity: 1;
     filter: drop-shadow(0px 0px 1px white);
-    transform: scale(1.1);
 }
-
-
 header nav ul li:hover {
     opacity: 1;
     transform: scale(1.1);
@@ -64,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 300vh;
+    height: 400vh;
     background-image: url(../img/background_vinho.jpg);
     background-size: 300% 300%;
     background-position: center;
@@ -74,7 +73,7 @@ body {
 
 main {
     width: 100vw;
-    height: 200vh;
+    height: 400vh;
     display: flex;
     position: absolute;
     z-index: 0;
@@ -82,7 +81,6 @@ main {
     justify-content: center;
     align-items: center;
     color: white;
-    padding-top: 15vh;
     /* Ajuste para não ficar atrás do header */
 }
 
@@ -105,7 +103,7 @@ main ul li a i:hover {
     filter: drop-shadow(0px 0px 5px white);
 }
 
-main img {
+#inicio img {
     border: 2px solid white;
     border-radius: 50%;
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
@@ -124,25 +122,29 @@ main img {
 #sobre-mim{
     width: 95vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .conteudo-sobre-mim{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    height: min-content;
+    padding: 5vh 0px;
+    background-color: rgb(14, 14, 14);
     /*background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.39), rgba(255, 255, 255, 0.151), rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.089));
     */border-radius: 5px;
+    box-shadow: 0px 0px 10px 10px rgb(14, 14, 14);
 }
 .descricao-sobre-mim{
     height: min-content;
-    width: 400px;
+    width: 800px;
     display: flex;
     text-align: justify;
     justify-content: space-between;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.521);
     padding: 10px;
     border-radius: 10px;
     font-size: large;
@@ -156,6 +158,57 @@ main img {
     height:auto;
 
 }
+#projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: 100vh;
+}
+.conteudo-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0px 0px 10px 10px rgb(14, 14, 14);
+}
+.links-projetos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.links-projetos figure{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px;
+    transition: filter 0.1s ease-in-out, border 0.2s ease-in-out;
+}
+.links-projetos figure:hover{
+    filter: drop-shadow(0px 0px 1px white);
+    border: 1px solid white;
+}
+.links-projetos img{
+    width: auto;
+    height: 200px;
+}
+#contato{
+    width: 95vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+
 /* Media Queries para diferentes tamanhos de tela */
 @media (max-width: 768px) {
     header {
