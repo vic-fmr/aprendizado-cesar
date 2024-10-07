@@ -160,8 +160,6 @@ main ul li a i:hover {
 .section{
     opacity: 0;
     /* Inicialmente invisível */
-    transform: translateY(20px);
-    /* Um pouco fora da posição original */
     transition: all 0.5s ease-in-out;
 }
 
@@ -174,7 +172,6 @@ main ul li a i:hover {
 }
 .section.active{
     opacity: 1;
-    transform: translateY(0);
 }
 
 .conteudo-sobre-mim {
@@ -312,6 +309,8 @@ main ul li a i:hover {
     width: 100px;
     height: auto;
     transition: filter 0.2s ease-in-out;
+    border: 1px solid white;
+    border-radius: 25px;
 }
 
 .links-contato-profissional img:hover {
