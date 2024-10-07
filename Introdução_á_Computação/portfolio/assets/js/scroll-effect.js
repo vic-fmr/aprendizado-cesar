@@ -24,6 +24,11 @@ const sobreMimSection = document.querySelector("#sobre-mim");
 const projetosSection = document.querySelector("#projetos")
 const contatoSecton = document.querySelector("#contato")
 
+const baterPapo = document.querySelector("#bater-um-papo")
+baterPapo.addEventListener("click", () => {
+  contatoSecton.scrollIntoView({ behavior: "smooth" });
+})
+
 botaoSobreMim.addEventListener("click", () => {
   sobreMimSection.scrollIntoView({ behavior: "smooth" });
 });
