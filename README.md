@@ -13,5 +13,10 @@
 
 <br>
 
-Códigos criados a partir das aulas e exercícios durante minha graduação na <a href="https://www.cesar.school/"> <strong style = "color: #ffa500; text-decoration: underline; cursor: pointer;">CESAR School<strong></a>
+Códigos criados a partir das aulas e exercícios durante minha graduação na <a href="https://www.cesar.school/"> <strong>CESAR School<strong></a>
 </div>
+
+
+
+
+
