@@ -1,6 +1,6 @@
 # Minha jornada na CESAR School
 
-<div style="display: inline_block; text-align: center; font-size: 20px;">
+<div style="display: inline_block;>
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
