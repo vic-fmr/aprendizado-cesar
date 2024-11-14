@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula 40 - Revisão JS</title>
+    </head>
+    <body>
+        <h1 id="titulo">Exercício de Revisão sobre JS</h1>
+        <button onclick="alterarCor('blue')">Mudar cor</button>
+
+        <button onclick="atualizarParagrafo()">Atualizar texto</button>
+        <p id="mensagem"></p>
+
+        <form>
+            <input type="text" id="texto" />
+            <input
+                type="submit"
+                id="btn-validar"
+                onclick="validarInput(event)"
+                onmouseover="mostrarMensagem()"
+                onmouseout="ocultarMensagem()"
+                value="Exercício de Revisão de JS 4 Enviar"
+            />
+            <p id="mensagem-mouse-over"></p>
+            <br /><br />
+            <input
+                type="number"
+                id="numero"
+                placeholder="Digite um número"
+                onblur="parOuImpar()"
+            />
+            <br /><br />
+            <p id="mensagem-data"></p>
+            <input type="date" id="data" onfocus="exibirMensagem()" />
+        </form>
+
+        <h2>Piadas do Chuck Norris</h2>
+        <p id="piada"></p>
+        <button onclick="obterPiada()">Nova Piada</button>
+        <br /><br />
+        <input
+            type="text"
+            id="entrada"
+            placeholder="digite uma palavra qualquer..."
+        />
+        <button onclick="validarEntrada()">Validar Entrada</button>
+        <!-- Altere o número da questão no src do script quando necessário -->
+        <script src="q11.js"></script>
+        <script src="q12.js"></script>
+        <script src="q13.js"></script>
+        <script src="q14.js"></script>
+        <script src="q15.js"></script>
+        <script src="q16.js"></script>
+        <script src="q17.js"></script>
+        <script src="q18.js"></script>
+        <script src="q19.js"></script>
+        <script src="q20.js"></script>
+    </body>
+</html>

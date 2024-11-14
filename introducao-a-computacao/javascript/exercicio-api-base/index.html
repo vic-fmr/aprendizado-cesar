@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dados de Usuários</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img src="./assets/night-mode.png" alt="icone mudar tema" onclick="changeTheme()">
+    <div class="container">
+      <h1>Buscar Usuário></h1>
+
+      <input
+        type="number"
+        id="userId"
+        placeholder="Digite o ID do usuário"
+        required
+      />
+      <button onclick="buscarUsuario()">Buscar</button>
+
+      <div class="usuarioCard usuario-card">
+        <h2>Detalhes do Usuário</h2>
+        <p>Nome: <span id="usuarioNome"></span></p>
+        <p>Email: <span id="usuarioEmail"></span></p>
+        <p>Telefone: <span id="usuarioTelefone"></span></p>
+      </div>
+
+      <p id="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="change-mode.js"></script>
+  </body>
+</html>
